@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "author": "Jayasankar JP",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0 },
+
+    { "type": "wokwi-lcd1602", "id": "lcd", "top": -140, "left": 220 },
+
+    { "type": "wokwi-potentiometer", "id": "pot", "top": 10, "left": 360 },
+
+    { "type": "wokwi-pushbutton", "id": "btn_up", "top": 120, "left": 220 },
+    { "type": "wokwi-pushbutton", "id": "btn_down", "top": 180, "left": 220 },
+    { "type": "wokwi-pushbutton", "id": "btn_ok", "top": 240, "left": 220 },
+    { "type": "wokwi-pushbutton", "id": "btn_back", "top": 300, "left": 220 }
+  ],
+  "connections": [
+    ["uno:5V", "lcd:VDD", "red"],
+    ["uno:GND", "lcd:VSS", "black"],
+    ["uno:GND", "lcd:RW", "black"],
+
+    ["pot:VCC", "uno:5V", "red"],
+    ["pot:GND", "uno:GND", "black"],
+    ["pot:SIG", "lcd:VO", "blue"],
+
+    ["lcd:RS", "uno:12", "green"],
+    ["lcd:E", "uno:11", "green"],
+    ["lcd:D4", "uno:5", "green"],
+    ["lcd:D5", "uno:4", "green"],
+    ["lcd:D6", "uno:3", "green"],
+    ["lcd:D7", "uno:2", "green"],
+
+    ["lcd:A", "uno:5V", "red"],
+    ["lcd:K", "uno:GND", "black"],
+
+    ["btn_up:1.l", "uno:8", "yellow"],
+    ["btn_up:2.l", "uno:GND", "black"],
+
+    ["btn_down:1.l", "uno:9", "yellow"],
+    ["btn_down:2.l", "uno:GND", "black"],
+
+    ["btn_ok:1.l", "uno:10", "yellow"],
+    ["btn_ok:2.l", "uno:GND", "black"],
+
+    ["btn_back:1.l", "uno:13", "yellow"],
+    ["btn_back:2.l", "uno:GND", "black"]
+  ]
+}

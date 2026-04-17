@@ -1,0 +1,13 @@
+MenuCreator	KEYWORD1
+
+init	KEYWORD2
+idealText	KEYWORD2
+appendChild	KEYWORD2
+attachCallBack	KEYWORD2
+butProcess	KEYWORD2
+
+operator<<	KEYWORD2
+
+MAX_CHILD	LITERAL1
+MENU_MODE	LITERAL1
+IDEL	LITERAL1
