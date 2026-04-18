@@ -7,7 +7,7 @@
 #include <LiquidCrystal.h>
 #define MAX_CHILD 10
 #define MENU_MODE 1
-#define IDEL 2
+#define IDEAL 2
 class MenuCreator
 {
 private:
@@ -25,13 +25,15 @@ private:
     static int IP_MODE;
     static short mode;
     static unsigned long initial_time_ref;
+    static unsigned long timeout;
+    static char idealMsg[4][20];
 
 public:
     MenuCreator();
 
     static void init();
     static void setRoot(MenuCreator *root);
-    static void idealText(char idealMsg[4][20]);
+    static void setIdealText(int line, char msg[20]);
     static void butProcess();
     int appendChild(MenuCreator *child);
     void attachCallBack(void (*callback)(void));

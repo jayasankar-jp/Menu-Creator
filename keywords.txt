@@ -1,13 +1,45 @@
-MenuCreator	KEYWORD1
+#######################################
+# Syntax Coloring Map For MenuCreator
+#######################################
 
+#######################################
+# Datatypes / Classes (KEYWORD1)
+#######################################
+MenuCreator	KEYWORD1
+LiquidCrystal	KEYWORD1
+
+#######################################
+# Methods / Functions (KEYWORD2)
+#######################################
 init	KEYWORD2
-idealText	KEYWORD2
+setRoot	KEYWORD2
+setIdealText	KEYWORD2
+butProcess	KEYWORD2
 appendChild	KEYWORD2
 attachCallBack	KEYWORD2
-butProcess	KEYWORD2
-
 operator<<	KEYWORD2
 
+#######################################
+# Static Members / Variables (KEYWORD2)
+#######################################
+current	KEYWORD2
+rootNode	KEYWORD2
+lcd	KEYWORD2
+UP	KEYWORD2
+DOWN	KEYWORD2
+OK	KEYWORD2
+BACK	KEYWORD2
+ROW	KEYWORD2
+COL	KEYWORD2
+IP_MODE	KEYWORD2
+mode	KEYWORD2
+initial_time_ref	KEYWORD2
+timeout	KEYWORD2
+idealMsg	KEYWORD2
+
+#######################################
+# Constants / Macros (LITERAL1)
+#######################################
 MAX_CHILD	LITERAL1
 MENU_MODE	LITERAL1
-IDEL	LITERAL1
+IDEAL	LITERAL1

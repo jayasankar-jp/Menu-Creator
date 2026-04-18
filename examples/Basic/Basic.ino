@@ -9,7 +9,7 @@ int MenuCreator::BACK = 13;
 int MenuCreator::IP_MODE = LOW; // LOW TRIGGER
 short MenuCreator::COL = 16;
 short MenuCreator::ROW = 2;
-
+unsigned long MenuCreator::timeout = 60;
 MenuCreator root;
 MenuCreator Menu1;
 MenuCreator Menu2;
@@ -56,6 +56,8 @@ void setup()
     Menu3.attachCallBack(fun3);
     Menu4.attachCallBack(fun4);
     Menu5.attachCallBack(fun5);
+    MenuCreator::setIdealText(0, "Welcome");
+    MenuCreator::setIdealText(1, "To Menu Creator");
 }
 void loop()
 {
