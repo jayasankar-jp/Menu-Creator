@@ -41,7 +41,7 @@ void setup()
 {
     Serial.begin(9600);
     MenuCreator::init();
-
+    MenuCreator::setRoot(&root);
     root.appendChild(&Menu1);
     root.appendChild(&Menu2);
     root.appendChild(&Menu3);
@@ -59,5 +59,5 @@ void setup()
 }
 void loop()
 {
-    root.butProcess();
+    MenuCreator::butProcess();
 }
